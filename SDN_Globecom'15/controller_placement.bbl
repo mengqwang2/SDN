@@ -1,0 +1,109 @@
+\begin{thebibliography}{10}
+
+\bibitem{curtis2011devoflow}
+A.~R. Curtis, J.~C. Mogul, J.~Tourrilhes, P.~Yalagandula, P.~Sharma, and
+  S.~Banerjee.
+\newblock Devoflow: Scaling flow management for high-performance networks.
+\newblock In {\em ACM SIGCOMM Computer Communication Review}, volume~41, pages
+  254--265. ACM, 2011.
+
+\bibitem{dixit2013towards}
+A.~Dixit, F.~Hao, S.~Mukherjee, T.~Lakshman, and R.~Kompella.
+\newblock Towards an elastic distributed sdn controller.
+\newblock In {\em ACM SIGCOMM Computer Communication Review}, volume~43, pages
+  7--12. ACM, 2013.
+
+\bibitem{gross2008fundamentals}
+D.~Gross.
+\newblock {\em Fundamentals of queueing theory}.
+\newblock John Wiley \& Sons, 2008.
+
+\bibitem{heller2012controller}
+B.~Heller, R.~Sherwood, and N.~McKeown.
+\newblock The controller placement problem.
+\newblock In {\em Proceedings of the first workshop on Hot topics in software
+  defined networks}, pages 7--12. ACM, 2012.
+
+\bibitem{hock2013pareto}
+D.~Hock, M.~Hartmann, S.~Gebert, M.~Jarschel, T.~Zinner, and P.~Tran-Gia.
+\newblock Pareto-optimal resilient controller placement in sdn-based core
+  networks.
+\newblock In {\em Teletraffic Congress (ITC), 2013 25th International}, pages
+  1--9. IEEE, 2013.
+
+\bibitem{jain2013b4}
+S.~Jain, A.~Kumar, S.~Mandal, J.~Ong, L.~Poutievski, A.~Singh, S.~Venkata,
+  J.~Wanderer, J.~Zhou, M.~Zhu, et~al.
+\newblock B4: Experience with a globally-deployed software defined wan.
+\newblock In {\em ACM SIGCOMM Computer Communication Review}, volume~43, pages
+  3--14. ACM, 2013.
+
+\bibitem{jimenez2014controller}
+Y.~Jimenez, C.~Cervello-Pastor, and A.~J. Garcia.
+\newblock On the controller placement for designing a distributed sdn control
+  layer.
+\newblock In {\em Networking Conference, 2014 IFIP}, pages 1--9. IEEE, 2014.
+
+\bibitem{knight2011internet}
+S.~Knight, H.~X. Nguyen, N.~Falkner, R.~Bowden, and M.~Roughan.
+\newblock The internet topology zoo.
+\newblock {\em Selected Areas in Communications, IEEE Journal on},
+  29(9):1765--1775, 2011.
+
+\bibitem{koponen2010onix}
+T.~Koponen, M.~Casado, N.~Gude, J.~Stribling, L.~Poutievski, M.~Zhu,
+  R.~Ramanathan, Y.~Iwata, H.~Inoue, T.~Hama, et~al.
+\newblock Onix: A distributed control platform for large-scale production
+  networks.
+\newblock In {\em OSDI}, volume~10, pages 1--6, 2010.
+
+\bibitem{nunes2014survey}
+B.~Nunes, M.~Mendonca, X.~Nguyen, K.~Obraczka, and T.~Turletti.
+\newblock A survey of software-defined networking: Past, present, and future of
+  programmable networks.
+\newblock 2014.
+
+\bibitem{ros2014five}
+F.~J. Ros and P.~M. Ruiz.
+\newblock Five nines of southbound reliability in software-defined networks.
+\newblock In {\em Proceedings of the third workshop on Hot topics in software
+  defined networking}, pages 31--36. ACM, 2014.
+
+\bibitem{schmid2013exploiting}
+S.~Schmid and J.~Suomela.
+\newblock Exploiting locality in distributed sdn control.
+\newblock In {\em Proceedings of the second ACM SIGCOMM workshop on Hot topics
+  in software defined networking}, pages 121--126. ACM, 2013.
+
+\bibitem{sezer2013we}
+S.~Sezer, S.~Scott-Hayward, P.-K. Chouhan, B.~Fraser, D.~Lake, J.~Finnegan,
+  N.~Viljoen, M.~Miller, and N.~Rao.
+\newblock Are we ready for sdn? implementation challenges for software-defined
+  networks.
+\newblock {\em Communications Magazine, IEEE}, 51(7):36--43, 2013.
+
+\bibitem{tavakoli2009applying}
+A.~Tavakoli, M.~Casado, T.~Koponen, and S.~Shenker.
+\newblock Applying nox to the datacenter.
+\newblock In {\em HotNets}, 2009.
+
+\bibitem{tootoonchian2010hyperflow}
+A.~Tootoonchian and Y.~Ganjali.
+\newblock Hyperflow: A distributed control plane for openflow.
+\newblock In {\em Proceedings of the 2010 internet network management
+  conference on Research on enterprise networking}, pages 3--3. USENIX
+  Association, 2010.
+
+\bibitem{tootoonchian2012controller}
+A.~Tootoonchian, S.~Gorbunov, Y.~Ganjali, M.~Casado, and R.~Sherwood.
+\newblock On controller performance in software-defined networks.
+\newblock In {\em USENIX Workshop on Hot Topics in Management of Internet,
+  Cloud, and Enterprise Networks and Services (Hot-ICE)}, volume~54, 2012.
+
+\bibitem{yao2014capacitated}
+G.~Yao, J.~Bi, Y.~Li, and L.~Guo.
+\newblock On the capacitated controller placement problem in software defined
+  networks.
+\newblock 2014.
+
+\end{thebibliography}

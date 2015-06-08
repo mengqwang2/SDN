@@ -1,0 +1,89 @@
+
+
+
+
+\subsection{Approximation Guarantee}
+If the optimal solution uses $k$ controllers, the greedy algorithm finds a solution with at most $k\ln(n/k)+k$ controllers.
+
+Since the optimal solution uses $k$ controllers, there must be some controller that covers at least a $1/k$ fraction of the switches. The algorithm chooses the controller that can cover the most switches, so it covers at least that many. Therefore, after the first iteration of the algorithm, there are at most $n(1-1/k)$ nodes left (including candidate controllers and switches). Again, since the optimal solution uses $k$ controllers, there must be some controller that covers at least a $1/k$ fraction of the remainder. If we got lucky we might have chosen one of the controllers used by the optimal solution and so there are actually $k-1$ controllers covering the remainder, but we cannot count on that necessarily happening. So, again, we choose the controller that covers the most switches remaining. 
+
+Let $R_t$ denotes the number of remain nodes after $t$ iterations of the greedy algorithm. The relation between $R_t$ and $R_{t-1}$ is described as:
+\begin{equation}
+\begin{aligned}
+R_t & = R_{t-1}-\frac{1}{k}(R_{t-1}-(k-(t-1)))-1 \\
+& = \frac{k-1}{k}R_{t-1} - \frac{t-1}{k}
+\end{aligned}
+\end{equation}
+
+By solving the sequence relation above, we can get:
+\begin{equation}
+R_t = (1-\frac{1}{k})^t(n-k)+k-t
+\end{equation}
+
+After $t=k\ln(n/k)$ rounds, the remaining nodes number is:
+\begin{equation}
+\label{rt}
+\begin{aligned}
+R_t & = (1-\frac{1}{k})^{k\ln(n/k)}(n-k)+k-k\ln(n/k) \\
+& \simeq (1/e)^{\ln(n/k)}(n-k)+(1-\ln(n/k))k \\
+& = \frac{k}{n}(n-k)+(1-\ln(n/k))k \\
+& = (2-\ln \frac{n}{k}- \frac{k}{n})k \\
+\end{aligned}
+\end{equation}
+
+Refer to the QoS constrain:
+\begin{equation}
+T_{ij}=2L_{ij}+E(S)_i\leq \theta,
+\end{equation}
+which derives:
+\begin{equation}
+E(S)_i < \theta \rightarrow \overline{E(S)} < \theta.
+\end{equation}
+
+From equation \ref{es}, we can derive:
+\begin{equation}
+\label{m}
+\frac{1}{\overline{u_i}-m\overline{\lambda_j}} < \theta,
+\end{equation}
+where $\overline{u_i}$ denotes the average processing rate of all controllers, $\overline{\lambda_j}$ denotes the average requesting rate of all switchs, $m$ denotes the average number of switches subscribed to each controller.
+
+From equation \ref{m}, we can derive:
+\begin{equation}
+m < \frac{1}{\overline{\lambda_j}}(\overline{u_i}-\frac{1}{\theta}).
+\end{equation}
+
+Since $m\leq n/k$, we can get:
+\begin{equation}
+\frac{n}{k} < \frac{1}{\overline{\lambda_j}}(\overline{u_i}-\frac{1}{\theta}),
+\end{equation}
+which gives an lower bound of $k$ as follows:
+\begin{equation}
+k>\frac{\overline{\lambda_j}\theta n}{\overline{u_i}\theta-1}>\frac{\overline{\lambda_j}}{\overline{u_i}}n
+\end{equation}
+
+Since each controller must controll at least one switch, the total number of controllers cannot exceed $n/2$. Then, the optimal number of controllers $k$ is bounded as:
+\begin{equation}
+\label{k}
+\frac{\overline{\lambda_j}}{\overline{u_i}}n<k<\frac{n}{2}
+\end{equation}
+
+The result above derives that:
+\begin{equation}
+\label{bound}
+\ln 2<\ln(n/k)<\ln \frac{\overline{u_i}}{\overline{\lambda_j}}.
+\end{equation}
+
+From inequality \ref{k} and \ref{bound}, we can derive:
+\begin{equation}
+\label{rt_bound1}
+2-\ln \frac{n}{k}- \frac{k}{n}<1.31-\frac{\overline{\lambda_j}}{\overline{u_i}}<1.31
+\end{equation}
+
+From the equation \ref{rt} and inequality \ref{rt_bound1}, we can derive:
+\begin{equation}
+R_t<1.31k
+\end{equation}
+
+The above result indicates that after $t=k\ln(n/k)$ rounds, there are at most $1.31k$ nodes left. Since each new controller covers at least one switch, we only need to go $1.31k$ more steps. Then we can say that:
+
+\emph{\textbf{If the optimal solution requires $k$ controllers, the proposed greedy algorithm finds a solution with at most $k\ln(n/k)+1.31k$ controllers.}}

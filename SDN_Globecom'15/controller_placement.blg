@@ -1,0 +1,60 @@
+This is BibTeX, Version 0.99d (TeX Live 2014)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: controller_placement.aux
+The style file: abbrv.bst
+Database file #1: reference.bib
+Repeated entry---line 219 of file reference.bib
+ : @book{gross2008fundamentals
+ :                            ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 226 of file reference.bib
+ : @article{nunes2014survey
+ :                         ,
+I'm skipping whatever remains of this entry
+Warning--can't use both volume and number fields in curtis2011devoflow
+Warning--can't use both volume and number fields in dixit2013towards
+Warning--can't use both volume and number fields in jain2013b4
+Warning--empty journal in nunes2014survey
+Warning--empty journal in yao2014capacitated
+You've used 17 entries,
+            2118 wiz_defined-function locations,
+            589 strings with 7330 characters,
+and the built_in function-call counts, 7669 in all, are:
+= -- 729
+> -- 470
+< -- 15
++ -- 188
+- -- 168
+* -- 573
+:= -- 1243
+add.period$ -- 60
+call.type$ -- 17
+change.case$ -- 132
+chr.to.int$ -- 0
+cite$ -- 22
+duplicate$ -- 282
+empty$ -- 535
+format.name$ -- 168
+if$ -- 1621
+int.to.chr$ -- 0
+int.to.str$ -- 17
+missing$ -- 18
+newline$ -- 88
+num.names$ -- 34
+pop$ -- 167
+preamble$ -- 1
+purify$ -- 116
+quote$ -- 0
+skip$ -- 194
+stack$ -- 0
+substring$ -- 347
+swap$ -- 95
+text.length$ -- 15
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 66
+warning$ -- 5
+while$ -- 68
+width$ -- 19
+write$ -- 196
+(There were 2 error messages)
